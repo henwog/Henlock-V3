@@ -21,8 +21,6 @@ Window:Minimize({
 	Callback = function()
 	end,
 })
---
-local newsec = tab1:Section("h6nri")
 -- main
 local tab1 = Window:Tab("Main") 
 -- Teleports
@@ -31,5 +29,3 @@ local tab2 = Window:Tab("Teleports")
 local button2 = newsec:Button("Double-Barrel","DB",function()
     getgenv().game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1039.59985, 18.8513641, -256.449951, -1, 0, 0, 0, 1, 0, 0, 0, -1)
 end)
---
-local tab3 = Window:Tab("Settings") 

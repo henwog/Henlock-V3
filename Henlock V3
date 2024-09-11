@@ -1,26 +1,7 @@
-_Hawk = "ohhahtuhthttouttpwuttuaunbotwo"
---
-local Hawk = loadstring(game:HttpGet("https://raw.githubusercontent.com/TheHanki/HawkHUB/main/LibSources/HawkLib.lua", true))()
---
-local Window = Hawk:Window({
-	ScriptName = "Henlock V3",
-	DestroyIfExists = true, --if false, gui wont disappear
-	Theme = "Dark" --Themes: Pink, White, Dark
-})
---
-Window:Close({
-	visibility = true, --if false, close button will disappear
-	Callback = function()
-		Window:Destroy() --Destroying Gui Function
-	end,
-})
---
-Window:Minimize({
-	visibility = true, --if false, close button will disappear
-	OpenButton = true, -- Visible = false etc, open button.
-	Callback = function()
-	end,
-})
---
-local tab1 = Window:Tab("Main") 
--- Window:Tab("Tab","Tab Title")
+getgenv().tog = false getgenv().key = "E" getgenv().X = 678 getgenv().Y = 100 getgenv().Z = -344
+
+game.StarterGui:SetCore("SendNotification", { Title = "Vascal on yt", Text = "Sub To Vascal!" })
+
+game:GetService("RunService").Heartbeat:Connect(function() if getgenv().tog then local vel = game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(getgenv().X, getgenv().Y, getgenv().Z) game:GetService("RunService").RenderStepped:Wait() game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = vel end end)
+
+game:GetService("Players").LocalPlayer:GetMouse().KeyDown:Connect(function(keyPressed) if keyPressed == string.lower(getgenv().key) then pcall(function() if getgenv().tog == false then getgenv().tog = true game.StarterGui:SetCore("SendNotification", { Title = "Sheesh2458", Text = "AA Enabled" }) elseif getgenv().tog == true then getgenv().tog = false game.StarterGui:SetCore("SendNotification", { Title = "sheesh2458", Text = "AA Disabled" }) end end) end end) hookfunction(game.Players.LocalPlayer.IsInGroup, function() return true end) game.StarterGui:SetCore("SendNotification", { Title = "Vascal On yt", Text = "Sub To Vascal!" }) loadstring(game:HttpGet("https://raw.githubusercontent.com/Nosssa/NossLock/main/VinGUI"))()

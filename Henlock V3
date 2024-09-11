@@ -21,6 +21,8 @@ Window:Minimize({
 	Callback = function()
 	end,
 })
+--
+local newsec = tab1:Section("h6nri")
 -- main
 local tab1 = Window:Tab("Main") 
 -- Teleports
